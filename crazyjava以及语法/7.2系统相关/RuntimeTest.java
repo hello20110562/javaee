@@ -2,13 +2,13 @@ import java.lang.Runtime;
 public class RuntimeTest{
 	public static void main(String[] args)
 	{
-		//è·å–Javaç¨‹åºå…³è”çš„è¿è¡Œæ—¶å¯¹è±¡
+		//»ñÈ¡Java³ÌĞò¹ØÁªµÄÔËĞĞÊ±¶ÔÏó
 		Runtime rt = Runtime.getRuntime();
 		
-		System.out.println("å¤„ç†å™¨æ•°é‡:"+rt.availableProcessors());
-		System.out.println("ç©ºé—²å†…å­˜ä¹¦:"+rt.freeMemory());
-		System.out.println("æ€»å†…å­˜æ•°:"+rt.totalMemory());
-		System.out.println("å¯ç”¨æœ€å¤§å†…å­˜æ•°:"+rt.maxMemory());
+		System.out.println("´¦ÀíÆ÷ÊıÁ¿:"+rt.availableProcessors());
+		System.out.println("¿ÕÏĞÄÚ´æÊé:"+rt.freeMemory());
+		System.out.println("×ÜÄÚ´æÊı:"+rt.totalMemory());
+		System.out.println("¿ÉÓÃ×î´óÄÚ´æÊı:"+rt.maxMemory());
 	}
 
 }

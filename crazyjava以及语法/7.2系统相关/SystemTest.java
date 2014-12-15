@@ -1,4 +1,4 @@
-//Systemç±»è®¿é—®æ“ä½œçš„ç¯å¢ƒå˜é‡å’Œç³»ç»Ÿå±æ€§
+//SystemÀà·ÃÎÊ²Ù×÷µÄ»·¾³±äÁ¿ºÍÏµÍ³ÊôĞÔ
 import java.io.FileOutputStream;
 import java.util.Map;
 import java.util.Properties;
@@ -6,19 +6,19 @@ public class SystemTest
 {
 	public static void main(String [] args)throws Exception
 	{
-		//è·å–ç³»ç»Ÿæ‰€æœ‰çš„ç¯å¢ƒå˜é‡
+		//»ñÈ¡ÏµÍ³ËùÓĞµÄ»·¾³±äÁ¿
 		Map<String,String> env =System.getenv();
 		for(String name:env.keySet())
 		{
-			System.out.println("å¼€å§‹"+name+"--->"+env.get(name));
+			System.out.println("¿ªÊ¼"+name+"--->"+env.get(name));
 		}
-		//è·å–åˆ¶å®šç¯å¢ƒå˜é‡çš„å€¼
+		//»ñÈ¡ÖÆ¶¨»·¾³±äÁ¿µÄÖµ
 		System.out.println(System.getenv("JAVA_HOME"));
-		//è·å–æ‰€æœ‰çš„ç³»ç»Ÿå±æ€§
+		//»ñÈ¡ËùÓĞµÄÏµÍ³ÊôĞÔ
 		Properties props=System.getProperties();
-		//å°†æ‰€æœ‰çš„ç³»ç»Ÿå±æ€§ä¿å­˜åˆ°props.txtæ–‡ä»¶ä¸­
+		//½«ËùÓĞµÄÏµÍ³ÊôĞÔ±£´æµ½props.txtÎÄ¼şÖĞ
 		props.store(new FileOutputStream("props.txt"),"System Propertoes");
-		//è¾“å‡ºç‰¹å®šçš„ç³»ç»Ÿå±æ€§
+		//Êä³öÌØ¶¨µÄÏµÍ³ÊôĞÔ
 		System.out.println(System.getProperty("os.name"));
 	}
 	

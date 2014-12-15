@@ -9,7 +9,7 @@ class User implements Cloneable{
 	Address address;
 	public User(int age){
 		this.age = age;
-		address = new Address("å¹¿å·å¤©æ²³");
+		address = new Address("¹ãÖİÌìºÓ");
 	}
 	public User clone()
 	throws CloneNotSupportedException
@@ -23,12 +23,12 @@ public class CloneTest{
 	throws CloneNotSupportedException
 	{
 		User u1= new User(23);
-		//clone å¾—åˆ°u1çš„å‰¯æœ¬
+		//clone µÃµ½u1µÄ¸±±¾
 		User u2 = u1.clone();
 		System.out.println(u1 == u2);
-		//åˆ¤æ–­u1,u2æ˜¯å¦ç›¸åŒ
+		//ÅĞ¶Ïu1,u2ÊÇ·ñÏàÍ¬
 		System.out.println(u1.address == u2.address);
-		//åˆ¤æ–­u1,u2çš„addressæ˜¯å¦ç›¸åŒ
+		//ÅĞ¶Ïu1,u2µÄaddressÊÇ·ñÏàÍ¬
 	}
 
 }
